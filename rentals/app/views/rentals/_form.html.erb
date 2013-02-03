@@ -1,0 +1,41 @@
+<%= form_for(@rental) do |f| %>
+  <% if @rental.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rental.errors.count, "error") %> prohibited this rental from being saved:</h2>
+
+      <ul>
+      <% @rental.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sdate %><br />
+    <%= f.date_select :sdate %>
+  </div>
+  <div class="field">
+    <%= f.label :edate %><br />
+    <%= f.date_select :edate %>
+  </div>
+  <div class="field">
+    <%= f.label :aite_tantousya %><br />
+    <%= f.text_field :aite_tantousya %>
+  </div>
+  <div class="field">
+    <%= f.label :aite_syamei %><br />
+    <%= f.text_field :aite_syamei %>
+  </div>
+  <div class="field">
+    <%= f.label :aite_tel %><br />
+    <%= f.text_field :aite_tel %>
+  </div>
+  <div class="field">
+    <%= f.label :tantousya %><br />
+    <%= f.text_field :tantousya %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

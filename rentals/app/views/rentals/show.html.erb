@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sdate:</b>
+  <%= @rental.sdate %>
+</p>
+
+<p>
+  <b>Edate:</b>
+  <%= @rental.edate %>
+</p>
+
+<p>
+  <b>Aite tantousya:</b>
+  <%= @rental.aite_tantousya %>
+</p>
+
+<p>
+  <b>Aite syamei:</b>
+  <%= @rental.aite_syamei %>
+</p>
+
+<p>
+  <b>Aite tel:</b>
+  <%= @rental.aite_tel %>
+</p>
+
+<p>
+  <b>Tantousya:</b>
+  <%= @rental.tantousya %>
+</p>
+
+
+<%= link_to 'Edit', edit_rental_path(@rental) %> |
+<%= link_to 'Back', rentals_path %>

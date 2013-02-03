@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sdate: 2013-02-03
+  edate: 2013-02-03
+  aite_tantousya: MyString
+  aite_syamei: MyString
+  aite_tel: MyString
+  tantousya: MyString
+
+two:
+  sdate: 2013-02-03
+  edate: 2013-02-03
+  aite_tantousya: MyString
+  aite_syamei: MyString
+  aite_tel: MyString
+  tantousya: MyString
